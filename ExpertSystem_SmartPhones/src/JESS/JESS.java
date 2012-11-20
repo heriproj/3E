@@ -20,7 +20,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  * @author lubostar
  */
 public class JESS {
-    public static Rete jess;
+    private static Rete jess;
     private static String command=new String();
     private static Iterator results;
     private static ArrayList<Fact> working_memory=new ArrayList();
