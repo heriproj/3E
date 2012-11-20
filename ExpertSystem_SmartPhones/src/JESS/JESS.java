@@ -18,6 +18,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  */
 public class JESS {
     public static Rete jess;
+    public static Rete test;
     private static String command=new String();
     private static Iterator results;
     
