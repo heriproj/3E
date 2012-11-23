@@ -2,6 +2,7 @@ package JESS;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -56,60 +57,52 @@ public class JESS {
     }
     
     private static void writeResults(Iterator results) throws JessException{
+        System.out.println("writing results...");
         while(results.hasNext()){ // create Facts from results
             HashMap result=(HashMap) results.next();
             Fact fact=new Fact("device", jess);
-            fact.setSlotValue("name", new Value(result.get("name")));
-            fact.setSlotValue("device_type", new Value(result.get("type")));
-            fact.setSlotValue("manufacturer", new Value(result.get("name")));
-            fact.setSlotValue("OS", new Value(result.get("os")));
-            fact.setSlotValue("display_resolution", new Value(result.get("dislpay")));
-            fact.setSlotValue("storage", new Value(result.get("storage")));
-            fact.setSlotValue("camera", new Value(result.get("camera")));
+            System.out.println("name=" + result.get("name"));
+            fact.setSlotValue("name", new Value(result.get("name").toString(),RU.STRING));
+            fact.setSlotValue("device_type", new Value(result.get("type").toString(),RU.STRING));
+            fact.setSlotValue("manufacturer", new Value(result.get("manufacturer").toString(),RU.STRING));
+            fact.setSlotValue("OS", new Value(result.get("os").toString(),RU.STRING));
+            fact.setSlotValue("display_resolution", new Value(Float.parseFloat(result.get("display").toString()), RU.FLOAT));
+            fact.setSlotValue("storage", new Value((int)result.get("storage"),RU.INTEGER));
+            fact.setSlotValue("camera", new Value((int)result.get("camera"),RU.INTEGER));
 
             ValueVector vv = new ValueVector();
             Object[] v=(Object[]) result.get("connectivity");
-            System.out.print(" connectivity=");
+//            System.out.print(" connectivity=");
             for(int i=v.length-1;i>=0;i--){
-                System.out.print(" " + v[i]);
+//                System.out.print(" " + v[i]);
                 vv.add(new Value(v[i].toString(), RU.STRING));
             }
             fact.setSlotValue("connectivity", new Value(vv, RU.LIST));
 
             v=(Object[]) result.get("io");
-            System.out.print(" io=");
+//            System.out.print(" io=");
             for(int i=v.length-1;i>=0;i--){
-                System.out.print(" " + v[i]);
+//                System.out.print(" " + v[i]);
                 vv.add(new Value(v[i].toString(), RU.STRING));
             }
             fact.setSlotValue("input_output", new Value(vv, RU.LIST));
 
-            fact.setSlotValue("battery", new Value(result.get("battery")));
-            fact.setSlotValue("price", new Value(result.get("price")));
+            fact.setSlotValue("battery", new Value((int)result.get("battery"),RU.INTEGER));
+            fact.setSlotValue("price", new Value((int)result.get("price"),RU.INTEGER));
 
             working_memory.add(fact);
-
-            System.out.print("name=" + result.get("name"));
-/*            System.out.println("Result from Java = name=" + ((HashMap) results.next()).get("name") +
-                    "type=" + ((HashMap) results.next()).get("type") +
-                    "manufacturer=" + ((HashMap) results.next()).get("manufacturer") +
-                    "OS=" + ((HashMap) results.next()).get("os") +
-                    "display resolution=" + ((HashMap) results.next()).get("display") +
-                    "storage=" + ((HashMap) results.next()).get("storage") +
-                    "camera=" + ((HashMap) results.next()).get("camera") +
-                    "connectivity=" + ((HashMap) results.next()).get("connectivity") +
-                    "io=" + ((HashMap) results.next()).get("io") +
-                    "battery=" + ((HashMap) results.next()).get("battery") +
-                    "price=" + ((HashMap) results.next()).get("price"));*/
+            jess.remove(result);
         }
     }
     
     private static void initWorkingMemory() throws JessException{ // init from results
-        for(int i=0;i<=working_memory.size();i++){
+        for(int i=0;i<working_memory.size();i++){
             jess.assertFact(working_memory.get(i));
         }
-        working_memory=null;
+        working_memory=null; // facts are asserted, reset ArrayList
         working_memory=new ArrayList<>();
+        
+        results=null;
     }
     
     public static void setType(String type){
@@ -122,6 +115,8 @@ public class JESS {
             command="(batch data.clp)";     // reinit data
             jess.executeCommand(command);
             
+            command="(facts)"; // redefine global
+            jess.executeCommand(command);
             jess.run(); // run JESS
             // load results from JESS
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
@@ -136,10 +131,15 @@ public class JESS {
         try {
             jess.reset(); // call reset
  
-            command="(defglobal ?*global_manufacturer* = " + manufacturer + ")"; // redefine global
+            resetAllGlobalVariables();
+            command="(defglobal ?*global_manufacturer* = \"" + manufacturer + "\")"; // redefine global
             jess.executeCommand(command);
+
             JESS.initWorkingMemory();
-            
+
+            command="(facts)"; // redefine global
+            jess.executeCommand(command);
+
             jess.run(); // run JESS
             // load results from JESS
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
@@ -154,9 +154,14 @@ public class JESS {
         try {
             jess.reset(); // call reset
  
-            command="(defglobal ?*global_os* = " + OS + ")"; // redefine global
+            resetAllGlobalVariables();
+            command="(defglobal ?*global_os* = \"" + OS + "\")"; // redefine global
             jess.executeCommand(command);
+            
             JESS.initWorkingMemory();
+
+            command="(facts)"; // redefine global
+            jess.executeCommand(command);
             
             jess.run(); // run JESS
             // load results from JESS
@@ -167,11 +172,45 @@ public class JESS {
         }
     }
     
+    private static void resetAllGlobalVariables() throws JessException{
+        command="(defglobal ?*global_os* = undefined)"; // redefine global
+        jess.executeCommand(command);
+          command="(defglobal ?*global_manufacturer* = undefined)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_type* = undefined)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_display_min* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_display_max* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_storage_min* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_storage_max* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_camera_min* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_camera_max* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_connectivity* = (create$ undefined))"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_io* = (create$ undefined))"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_battery_min* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_battery_max* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_price_min* = 0)"; // delete previous global
+          jess.executeCommand(command);
+          command="(defglobal ?*global_price_max* = 0)"; // delete previous global
+          jess.executeCommand(command);
+    }
+    
     public static void setDisplay(float min, float max){
         System.out.println("setting display resolution...");
         try {
             jess.reset();
             
+            resetAllGlobalVariables();
             String deffunction="(defglobal ?*global_display_min* = " + min + ")";
             jess.executeCommand(deffunction);
             deffunction="(defglobal ?*global_display_max* = " + max + ")";
@@ -180,6 +219,7 @@ public class JESS {
             
             jess.run();
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
+            writeResults(results);
          } catch (JessException ex) {
             Logger.getLogger(JESS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -190,6 +230,7 @@ public class JESS {
         try {
             jess.reset();
             
+            resetAllGlobalVariables();
             String deffunction="(defglobal ?*global_storage_min* = " + min + ")";
             jess.executeCommand(deffunction);
             deffunction="(defglobal ?*global_storage_max* = " + max + ")";
@@ -198,6 +239,7 @@ public class JESS {
             
             jess.run();
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
+            writeResults(results);
          } catch (JessException ex) {
             Logger.getLogger(JESS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -208,6 +250,7 @@ public class JESS {
         try {
             jess.reset();
             
+            resetAllGlobalVariables();
             String deffunction="(defglobal ?*global_camera_min* = " + min + ")";
             jess.executeCommand(deffunction);
             deffunction="(defglobal ?*global_camera_max* = " + max + ")";
@@ -216,6 +259,7 @@ public class JESS {
             
             jess.run();
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
+            writeResults(results);
          } catch (JessException ex) {
             Logger.getLogger(JESS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -226,6 +270,7 @@ public class JESS {
         try {
             jess.reset(); // call reset
  
+            resetAllGlobalVariables();
             command="(defglobal ?*global_connectivity* = (create$";
             for(int i=0;i<=conns.size();i++){
                 command.concat(" " + conns.get(i));
@@ -248,6 +293,7 @@ public class JESS {
         try {
             jess.reset(); // call reset
  
+            resetAllGlobalVariables();
             command="(defglobal ?*global_io* = (create$"; // redefine global
             for(int i=0;i<=io.size();i++){
                 command.concat(" " + io.get(i));
@@ -271,6 +317,7 @@ public class JESS {
         try {
             jess.reset();
             
+            resetAllGlobalVariables();
             String deffunction="(defglobal ?*global_battery_min* = " + min + ")";
             jess.executeCommand(deffunction);
             deffunction="(defglobal ?*global_battery_max* = " + max + ")";
@@ -279,6 +326,7 @@ public class JESS {
             
             jess.run();
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
+            writeResults(results);
          } catch (JessException ex) {
             Logger.getLogger(JESS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -289,6 +337,7 @@ public class JESS {
         try {
             jess.reset();
             
+            resetAllGlobalVariables();
             String deffunction="(defglobal ?*global_price_min* = " + min + ")";
             jess.executeCommand(deffunction);
             deffunction="(defglobal ?*global_price_max* = " + max + ")";
@@ -297,8 +346,13 @@ public class JESS {
             
             jess.run();
             results=jess.getObjects(new Filter.ByClass(HashMap.class));
+            writeResults(results);
          } catch (JessException ex) {
             Logger.getLogger(JESS.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+    
+    public static Iterator getResults(){
+        return JESS.results;
     }
 }
