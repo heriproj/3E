@@ -4,6 +4,8 @@
  */
 package Forms;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jozef
@@ -29,29 +31,29 @@ public class MobilForms extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jComboBox3 = new javax.swing.JComboBox();
+        displayComboBox = new javax.swing.JComboBox();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox();
+        storageComboBox = new javax.swing.JComboBox();
         jPanel4 = new javax.swing.JPanel();
-        jComboBox5 = new javax.swing.JComboBox();
+        cameraComboBox = new javax.swing.JComboBox();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox8 = new javax.swing.JComboBox();
+        batteryComboBox = new javax.swing.JComboBox();
         jPanel5 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jCheckBox6 = new javax.swing.JCheckBox();
+        wifiCheckBox = new javax.swing.JCheckBox();
+        bluetoothCheckBox = new javax.swing.JCheckBox();
+        jackCheckBox = new javax.swing.JCheckBox();
+        HDMICheckBox = new javax.swing.JCheckBox();
+        MicroSDCheckBox = new javax.swing.JCheckBox();
+        MicroUSBCheckBox = new javax.swing.JCheckBox();
         jPanel6 = new javax.swing.JPanel();
-        jComboBox9 = new javax.swing.JComboBox();
+        priceComboBox = new javax.swing.JComboBox();
         jLabel13 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        recommendClicked = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
 
@@ -69,7 +71,7 @@ public class MobilForms extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "=> 3", "=> 4" }));
+        displayComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "all...", "< 3", "3 - 4", "> 4" }));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 102, 102));
@@ -79,7 +81,7 @@ public class MobilForms extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("Storage ");
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "512 MB", "1 GB", "2 GB", "4 GB", "8 GB", "16 GB", "32 GB", "64 GB", "128 GB" }));
+        storageComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "all...", "< 1 GB", "1 - 2 GB", "2 - 4 GB", "4 - 8 GB", "8 - 16 GB", "16 - 32 GB", "32 - 64 GB", "> 64 GB" }));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -88,11 +90,11 @@ public class MobilForms extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(displayComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 215, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(storageComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(67, 67, 67))
         );
@@ -108,18 +110,18 @@ public class MobilForms extends javax.swing.JFrame {
                         .addComponent(jLabel7)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(storageComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(displayComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0", "3", "5", "8" }));
-        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+        cameraComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "all...", "< 3", "3 - 5", "5 - 8", "> 8" }));
+        cameraComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox5ActionPerformed(evt);
+                cameraComboBoxActionPerformed(evt);
             }
         });
 
@@ -131,7 +133,7 @@ public class MobilForms extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(102, 102, 102));
         jLabel10.setText("Battery life");
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "4", "5", "6" }));
+        batteryComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "all...", "4 - 7", "8 - 11", "12 - 16", "17 - 20", ">21" }));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -140,12 +142,12 @@ public class MobilForms extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cameraComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 215, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(batteryComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(67, 67, 67))
         );
         jPanel4Layout.setVerticalGroup(
@@ -160,8 +162,8 @@ public class MobilForms extends javax.swing.JFrame {
                         .addComponent(jLabel10)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cameraComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(batteryComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -176,33 +178,33 @@ public class MobilForms extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(102, 102, 102));
         jLabel12.setText(" Conectivity");
 
-        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setText("Wifi");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        wifiCheckBox.setBackground(new java.awt.Color(255, 255, 255));
+        wifiCheckBox.setText("Wifi");
+        wifiCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                wifiCheckBoxActionPerformed(evt);
             }
         });
 
-        jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox2.setText("Bluetooth");
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+        bluetoothCheckBox.setBackground(new java.awt.Color(255, 255, 255));
+        bluetoothCheckBox.setText("Bluetooth");
+        bluetoothCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox2ActionPerformed(evt);
+                bluetoothCheckBoxActionPerformed(evt);
             }
         });
 
-        jCheckBox3.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox3.setText("Jack 3.5");
+        jackCheckBox.setBackground(new java.awt.Color(255, 255, 255));
+        jackCheckBox.setText("Jack 3.5");
 
-        jCheckBox4.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox4.setText("HDMI mini");
+        HDMICheckBox.setBackground(new java.awt.Color(255, 255, 255));
+        HDMICheckBox.setText("HDMI mini");
 
-        jCheckBox5.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox5.setText("Micro SD");
+        MicroSDCheckBox.setBackground(new java.awt.Color(255, 255, 255));
+        MicroSDCheckBox.setText("Micro SD");
 
-        jCheckBox6.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox6.setText("Micro USB");
+        MicroUSBCheckBox.setBackground(new java.awt.Color(255, 255, 255));
+        MicroUSBCheckBox.setText("Micro USB");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -214,18 +216,18 @@ public class MobilForms extends javax.swing.JFrame {
                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox4)
-                            .addComponent(jCheckBox3))
+                            .addComponent(HDMICheckBox)
+                            .addComponent(jackCheckBox))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox5)
-                            .addComponent(jCheckBox6))))
+                            .addComponent(MicroSDCheckBox)
+                            .addComponent(MicroUSBCheckBox))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jCheckBox2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
-                        .addComponent(jCheckBox1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(bluetoothCheckBox, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                        .addComponent(wifiCheckBox, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(88, 88, 88))
         );
         jPanel5Layout.setVerticalGroup(
@@ -237,21 +239,21 @@ public class MobilForms extends javax.swing.JFrame {
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jCheckBox5))
+                    .addComponent(wifiCheckBox)
+                    .addComponent(jackCheckBox)
+                    .addComponent(MicroSDCheckBox))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox4)
-                    .addComponent(jCheckBox6)
-                    .addComponent(jCheckBox2))
+                    .addComponent(HDMICheckBox)
+                    .addComponent(MicroUSBCheckBox)
+                    .addComponent(bluetoothCheckBox))
                 .addGap(0, 9, Short.MAX_VALUE))
         );
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "<100", "<250", "<500", "<1000", ">1000" }));
+        priceComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "all...", "<100", "100 - 250", "250 - 500", "500 - 1000", ">1000" }));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(102, 102, 102));
@@ -265,7 +267,7 @@ public class MobilForms extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(priceComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -274,7 +276,7 @@ public class MobilForms extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(priceComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -289,14 +291,14 @@ public class MobilForms extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(32, 39, 42));
-        jLabel8.setText("     RECOMMEND");
-        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
-        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        recommendClicked.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        recommendClicked.setForeground(new java.awt.Color(32, 39, 42));
+        recommendClicked.setText("     RECOMMEND");
+        recommendClicked.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
+        recommendClicked.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        recommendClicked.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                recommendClickedMouseClicked(evt);
             }
         });
 
@@ -332,7 +334,7 @@ public class MobilForms extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(recommendClicked, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -371,7 +373,7 @@ public class MobilForms extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(recommendClicked, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22))
         );
 
@@ -389,15 +391,89 @@ public class MobilForms extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+    private void cameraComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cameraComboBoxActionPerformed
          
-    }//GEN-LAST:event_jComboBox5ActionPerformed
+    }//GEN-LAST:event_cameraComboBoxActionPerformed
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    private void recommendClickedMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recommendClickedMouseClicked
+        switch(displayComboBox.getSelectedIndex()){
+            case 0: break;
+            case 1: JESS.JESS.setDisplay(0, 3);break;
+            case 2: JESS.JESS.setDisplay(3, 4);break;
+            case 3: JESS.JESS.setDisplay(4, 10);break;
+        }
+        
+        switch(storageComboBox.getSelectedIndex()){
+            case 0:break;
+            case 1: JESS.JESS.setStorage(0, 1);break;
+            case 2: JESS.JESS.setStorage(1, 2);break;
+            case 3: JESS.JESS.setStorage(2, 4);break;
+            case 4: JESS.JESS.setStorage(4, 8);break;
+            case 5: JESS.JESS.setStorage(8, 16);break;
+            case 6: JESS.JESS.setStorage(16, 32);break;
+            case 7: JESS.JESS.setStorage(32, 64);break;
+            case 8: JESS.JESS.setStorage(64, 2048);break;
+        }
+        
+        switch(cameraComboBox.getSelectedIndex()){
+            case 0: break;
+            case 1: JESS.JESS.setCamera(3, 4);break;
+            case 2: JESS.JESS.setCamera(5, 7);break;
+            case 3: JESS.JESS.setCamera(8, 128);break;
+        }
+        
+        switch(batteryComboBox.getSelectedIndex()){
+            case 0:break;
+            case 1: JESS.JESS.setBattery(0, 7);break;
+            case 2: JESS.JESS.setBattery(8, 11);break;
+            case 3: JESS.JESS.setBattery(12, 16);break;
+            case 4: JESS.JESS.setBattery(17, 20);break;
+            case 5: JESS.JESS.setBattery(21, 512);break;
+        }
+
+        ArrayList<String> list=new ArrayList<>();
+        if(jackCheckBox.isSelected()){
+            list.add("stereo_jack");
+        }
+        if(MicroSDCheckBox.isSelected()){
+            list.add("Micro SD");
+        }
+        if(HDMICheckBox.isSelected()){
+            list.add("HDMI mini");
+        }
+        if(MicroUSBCheckBox.isSelected()){
+            list.add("Micro USB");
+        }
+        if(!list.isEmpty()){
+            JESS.JESS.setIO(list);
+        }
+        list.clear();
+        
+        if(wifiCheckBox.isSelected()){
+            list.add("WiFi");
+        }
+        if(bluetoothCheckBox.isSelected()){
+            list.add("Bluetooth");
+        }
+        if(!list.isEmpty()){
+            JESS.JESS.setConnectivity(list);
+        }
+        list.clear();
+        list=null;
+
+        switch(priceComboBox.getSelectedIndex()){
+            case 0:break;
+            case 1:JESS.JESS.setPrice(0, 100);break;
+            case 2:JESS.JESS.setPrice(100, 250);break;
+            case 3:JESS.JESS.setPrice(250, 500);break;
+            case 4:JESS.JESS.setPrice(500, 1000);break;
+            case 5:JESS.JESS.setPrice(1000, 10000);break;
+        }
+        
         this.dispose();
         ResultsMobilForm tabResults = new ResultsMobilForm();
         tabResults.setVisible(true);
-    }//GEN-LAST:event_jLabel8MouseClicked
+    }//GEN-LAST:event_recommendClickedMouseClicked
 
     // btn back to main window 
     private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
@@ -406,13 +482,13 @@ public class MobilForms extends javax.swing.JFrame {
         back2.setVisible(true);
     }//GEN-LAST:event_jLabel44MouseClicked
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void wifiCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wifiCheckBoxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_wifiCheckBoxActionPerformed
 
-    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+    private void bluetoothCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bluetoothCheckBoxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox2ActionPerformed
+    }//GEN-LAST:event_bluetoothCheckBoxActionPerformed
 
     // return to home 
     private void jLabel45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel45MouseClicked
@@ -463,17 +539,13 @@ public class MobilForms extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JComboBox jComboBox3;
-    private javax.swing.JComboBox jComboBox4;
-    private javax.swing.JComboBox jComboBox5;
-    private javax.swing.JComboBox jComboBox8;
-    private javax.swing.JComboBox jComboBox9;
+    private javax.swing.JCheckBox HDMICheckBox;
+    private javax.swing.JCheckBox MicroSDCheckBox;
+    private javax.swing.JCheckBox MicroUSBCheckBox;
+    private javax.swing.JComboBox batteryComboBox;
+    private javax.swing.JCheckBox bluetoothCheckBox;
+    private javax.swing.JComboBox cameraComboBox;
+    private javax.swing.JComboBox displayComboBox;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -484,12 +556,16 @@ public class MobilForms extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JCheckBox jackCheckBox;
+    private javax.swing.JComboBox priceComboBox;
+    private javax.swing.JLabel recommendClicked;
+    private javax.swing.JComboBox storageComboBox;
+    private javax.swing.JCheckBox wifiCheckBox;
     // End of variables declaration//GEN-END:variables
 }

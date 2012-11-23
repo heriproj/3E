@@ -418,28 +418,28 @@ public class TabletsForms extends javax.swing.JFrame {
         
         switch(storageComboBox.getSelectedIndex()){
             case 0: break;
-            case 1: JESS.JESS.setStorage(0, 7);
-            case 2: JESS.JESS.setStorage(8, 15);
-            case 3: JESS.JESS.setStorage(16, 31);
-            case 4: JESS.JESS.setStorage(32, 63);
-            case 5: JESS.JESS.setStorage(64, 127);
-            case 6: JESS.JESS.setStorage(128, 65536);
+            case 1: JESS.JESS.setStorage(0, 7);break;
+            case 2: JESS.JESS.setStorage(8, 15);break;
+            case 3: JESS.JESS.setStorage(16, 31);break;
+            case 4: JESS.JESS.setStorage(32, 63);break;
+            case 5: JESS.JESS.setStorage(64, 127);break;
+            case 6: JESS.JESS.setStorage(128, 65536);break;
         }
 
         switch(cameraComboBox.getSelectedIndex()){
             case 0: break;
-            case 1: JESS.JESS.setCamera(3, 4);
-            case 2: JESS.JESS.setCamera(5, 7);
-            case 3: JESS.JESS.setCamera(8, 128);
+            case 1: JESS.JESS.setCamera(3, 4);break;
+            case 2: JESS.JESS.setCamera(5, 7);break;
+            case 3: JESS.JESS.setCamera(8, 128);break;
         }
 
         switch(batteryComboBox.getSelectedIndex()){
             case 0:break;
-            case 1: JESS.JESS.setBattery(0, 7);
-            case 2: JESS.JESS.setBattery(8, 11);
-            case 3: JESS.JESS.setBattery(12, 16);
-            case 4: JESS.JESS.setBattery(17, 20);
-            case 5: JESS.JESS.setBattery(21, 512);
+            case 1: JESS.JESS.setBattery(0, 7);break;
+            case 2: JESS.JESS.setBattery(8, 11);break;
+            case 3: JESS.JESS.setBattery(12, 16);break;
+            case 4: JESS.JESS.setBattery(17, 20);break;
+            case 5: JESS.JESS.setBattery(21, 512);break;
         }
         
         ArrayList<String> list=new ArrayList<>();
@@ -456,7 +456,7 @@ public class TabletsForms extends javax.swing.JFrame {
             list.add("Micro USB");
         }
         if(!list.isEmpty()){
-            JESS.JESS.setConnectivity(list);
+            JESS.JESS.setIO(list);
         }
         list.clear();
         
@@ -470,18 +470,18 @@ public class TabletsForms extends javax.swing.JFrame {
             list.add("3G");
         }
         if(!list.isEmpty()){
-            JESS.JESS.setIO(list);
+            JESS.JESS.setConnectivity(list);
         }
         list.clear();
         list=null;
         
         switch(priceComboBox.getSelectedIndex()){
             case 0:break;
-            case 1:JESS.JESS.setPrice(0, 100);
-            case 2:JESS.JESS.setPrice(100, 250);
-            case 3:JESS.JESS.setPrice(250, 500);
-            case 4:JESS.JESS.setPrice(500, 1000);
-            case 5:JESS.JESS.setPrice(1000, 10000);
+            case 1:JESS.JESS.setPrice(0, 100);break;
+            case 2:JESS.JESS.setPrice(100, 250);break;
+            case 3:JESS.JESS.setPrice(250, 500);break;
+            case 4:JESS.JESS.setPrice(500, 1000);break;
+            case 5:JESS.JESS.setPrice(1000, 10000);break;
         }
         this.dispose();
         ResultsTabletForm tabResults = new ResultsTabletForm();

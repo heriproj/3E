@@ -272,10 +272,10 @@ public class JESS {
  
             resetAllGlobalVariables();
             command="(defglobal ?*global_connectivity* = (create$";
-            for(int i=0;i<=conns.size();i++){
-                command.concat(" " + conns.get(i));
+            for(int i=0;i<conns.size();i++){
+                command=command.concat(" " + conns.get(i));
             }
-            command.concat("))");
+            command=command.concat("))");
             jess.executeCommand(command);
             JESS.initWorkingMemory();
             
@@ -295,10 +295,10 @@ public class JESS {
  
             resetAllGlobalVariables();
             command="(defglobal ?*global_io* = (create$"; // redefine global
-            for(int i=0;i<=io.size();i++){
-                command.concat(" " + io.get(i));
+            for(int i=0;i<io.size();i++){
+                command=command.concat(" " + io.get(i));
             }
-            command.concat("))");
+            command=command.concat("))");
 
             jess.executeCommand(command);
             JESS.initWorkingMemory();
