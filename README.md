@@ -1,8 +1,5 @@
-<pre>                           <img  src="http://innovators-team10.github.com/help/images/TrollEdit_logo.png" align="middle" alt="logo"></img></pre>
- 
-
-
-3E
+<b> Rocommended expert system for choose of smartphone<b>
 ==
-
-Expert system for choose of smartphone. Student project at FIT, Slovak Univerzity of Technology 
+ Student project at Fakulty of Informatics and Information Technology  <br>
+ Slovak Univerzity of Technology in Bratislava <br>
+ Slovak Republic
