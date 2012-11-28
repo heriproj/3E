@@ -108,10 +108,10 @@ public class MainForm extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 110, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 21)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel10.setText("1. Choose device ");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
+        jLabel10.setText("Choose device ");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(102, 102, 102));
@@ -193,14 +193,14 @@ public class MainForm extends javax.swing.JFrame {
         ChooseTabltesForms tab = new  ChooseTabltesForms();
         JESS.setType("tablet");
         tab.setVisible(true);
-        this.setVisible(false);
+        this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
 
     // button mobil
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
        ChooseMobilForm mob = new ChooseMobilForm();
        mob.setVisible(true);
-       this.setVisible(false);
+       this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
 
     /**
