@@ -42,7 +42,7 @@ public class ResultsTabletForm extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
-        jPanel1.setBackground(new java.awt.Color(239, 239, 239));
+        jPanel1.setBackground(new java.awt.Color(250, 250, 250));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(32, 39, 42));
@@ -170,7 +170,7 @@ public class ResultsTabletForm extends javax.swing.JFrame {
     // return to choose OS 
     private void jLabel46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MouseClicked
          this.dispose();
-        ChooseTabltesForms kl = new ChooseTabltesForms();
+        ChooseTabletForm kl = new ChooseTabletForm();
         kl.setVisible(true);
     }//GEN-LAST:event_jLabel46MouseClicked
 

@@ -40,7 +40,7 @@ public class ResultsMobilForm extends javax.swing.JFrame {
         setTitle("Recommended mobile");
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(239, 239, 239));
+        jPanel1.setBackground(new java.awt.Color(250, 250, 250));
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -139,9 +139,9 @@ public class ResultsMobilForm extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 416, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -166,7 +166,7 @@ public class ResultsMobilForm extends javax.swing.JFrame {
 
     private void jLabel46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MouseClicked
          this.dispose();
-        ChooseMobilForm kl = new ChooseMobilForm();
+        ChooseMobilForm1 kl = new ChooseMobilForm1();
         kl.setVisible(true);
     }//GEN-LAST:event_jLabel46MouseClicked
 

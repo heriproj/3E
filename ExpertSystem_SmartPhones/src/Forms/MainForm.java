@@ -76,7 +76,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(239, 239, 239));
+        jPanel2.setBackground(new java.awt.Color(244, 244, 244));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -190,7 +190,7 @@ public class MainForm extends javax.swing.JFrame {
 
     // button tabltes
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        ChooseTabltesForms tab = new  ChooseTabltesForms();
+        ChooseTabletForm tab = new  ChooseTabletForm();
         JESS.setType("tablet");
         tab.setVisible(true);
         this.dispose();
@@ -198,7 +198,7 @@ public class MainForm extends javax.swing.JFrame {
 
     // button mobil
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-       ChooseMobilForm mob = new ChooseMobilForm();
+       ChooseMobilForm1 mob = new ChooseMobilForm1();
        mob.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked

@@ -45,7 +45,7 @@ public class AboutForm extends javax.swing.JFrame {
         setType(java.awt.Window.Type.POPUP);
         getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(250, 250, 250));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo2.png"))); // NOI18N
         jLabel1.setText(" ");
@@ -53,7 +53,7 @@ public class AboutForm extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/line_1.png"))); // NOI18N
         jLabel2.setText(" ");
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(250, 250, 250));
         jPanel2.setForeground(new java.awt.Color(32, 39, 42));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
