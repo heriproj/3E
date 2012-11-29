@@ -199,6 +199,7 @@ public class MainForm extends javax.swing.JFrame {
     // button mobil
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
        ChooseMobilForm1 mob = new ChooseMobilForm1();
+       JESS.setType("smartphone");
        mob.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
