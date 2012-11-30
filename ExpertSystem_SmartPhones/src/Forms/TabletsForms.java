@@ -60,7 +60,7 @@ public class TabletsForms extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(239, 239, 239));
+        jPanel1.setBackground(new java.awt.Color(250, 250, 250));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(32, 39, 42));
@@ -395,15 +395,15 @@ public class TabletsForms extends javax.swing.JFrame {
     // btn back  
     private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
           this.dispose();
-        ChooseTabltesForms back1 = new ChooseTabltesForms();
+        ChooseTabletForm back1 = new ChooseTabletForm();
         back1.setVisible(true);
     }//GEN-LAST:event_jLabel44MouseClicked
 
     // return to choose os 
     private void jLabel46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MouseClicked
          this.dispose();
-        ChooseMobilForm l = new ChooseMobilForm();
-        l.setVisible(true);
+        ChooseTabletForm gh = new ChooseTabletForm();
+        gh.setVisible(true);
     }//GEN-LAST:event_jLabel46MouseClicked
 
     // return to home 

@@ -60,7 +60,7 @@ public class MobilForms extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(760, 560));
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(239, 239, 239));
+        jPanel1.setBackground(new java.awt.Color(250, 250, 250));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(32, 39, 42));
@@ -402,7 +402,7 @@ public class MobilForms extends javax.swing.JFrame {
     // btn back to main window 
     private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
         this.dispose();
-        ChooseMobilForm back2 = new ChooseMobilForm();
+        ChooseMobilForm1 back2 = new ChooseMobilForm1();
         back2.setVisible(true);
     }//GEN-LAST:event_jLabel44MouseClicked
 
@@ -424,7 +424,7 @@ public class MobilForms extends javax.swing.JFrame {
     // return to choose OS 
     private void jLabel46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel46MouseClicked
         this.dispose();
-       ChooseMobilForm kl = new ChooseMobilForm();
+       ChooseMobilForm1 kl = new ChooseMobilForm1();
        kl.setVisible(true);
     }//GEN-LAST:event_jLabel46MouseClicked
 
