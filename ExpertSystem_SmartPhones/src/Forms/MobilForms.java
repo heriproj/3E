@@ -4,6 +4,8 @@
  */
 package Forms;
 
+import java.awt.Color;
+
 /**
  *
  * @author Jozef
@@ -56,7 +58,7 @@ public class MobilForms extends javax.swing.JFrame {
         jLabel45 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Mobil configuration");
+        setTitle("Mobile phone  configuration");
         setPreferredSize(new java.awt.Dimension(760, 560));
         setResizable(false);
 
@@ -64,7 +66,7 @@ public class MobilForms extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(32, 39, 42));
-        jLabel2.setText("   Choose features for your phone");
+        jLabel2.setText("   Choose features for your mobile phone");
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
@@ -281,22 +283,36 @@ public class MobilForms extends javax.swing.JFrame {
         jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(32, 39, 42));
         jLabel44.setText("           BACK");
+        jLabel44.setToolTipText("Return to choose OS ");
         jLabel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel44.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel44MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel44MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel44MouseExited(evt);
+            }
         });
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(32, 39, 42));
         jLabel8.setText("     RECOMMEND");
+        jLabel8.setToolTipText("Recommend mobile phone");
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel8MouseExited(evt);
             }
         });
 
@@ -347,7 +363,7 @@ public class MobilForms extends javax.swing.JFrame {
                                 .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -427,6 +443,27 @@ public class MobilForms extends javax.swing.JFrame {
        ChooseMobilForm1 kl = new ChooseMobilForm1();
        kl.setVisible(true);
     }//GEN-LAST:event_jLabel46MouseClicked
+
+    // btn back, change foreground (red)
+    private void jLabel44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseEntered
+        // TODO add your handling code here:
+        jLabel44.setForeground(Color.RED);
+    }//GEN-LAST:event_jLabel44MouseEntered
+
+    // btn back, change foreground (black)
+    private void jLabel44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseExited
+        jLabel44.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jLabel44MouseExited
+
+    // btn recommendation, change foreground (red)
+    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
+       jLabel8.setForeground(Color.RED);
+    }//GEN-LAST:event_jLabel8MouseEntered
+
+    // btn recommedation, change foreground (black)
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+        jLabel8.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jLabel8MouseExited
 
     /**
      * @param args the command line arguments

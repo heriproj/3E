@@ -4,6 +4,8 @@
  */
 package Forms;
 
+import java.awt.Color;
+
 /**
  *
  * @author Jozef
@@ -116,11 +118,18 @@ public class TabletsForms extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(32, 39, 42));
         jLabel8.setText("     RECOMMEND");
+        jLabel8.setToolTipText("Recommend tablet");
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel8MouseExited(evt);
             }
         });
 
@@ -284,11 +293,18 @@ public class TabletsForms extends javax.swing.JFrame {
         jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(32, 39, 42));
         jLabel44.setText("           BACK");
+        jLabel44.setToolTipText("Return to choose OS");
         jLabel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel44.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel44MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel44MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel44MouseExited(evt);
             }
         });
 
@@ -412,6 +428,26 @@ public class TabletsForms extends javax.swing.JFrame {
         MainForm ff = new MainForm();
         ff.setVisible(true);
     }//GEN-LAST:event_jLabel45MouseClicked
+
+    // btn back, change color 
+    private void jLabel44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseEntered
+         jLabel44.setForeground(Color.RED);
+    }//GEN-LAST:event_jLabel44MouseEntered
+
+    // btn back, change color 
+    private void jLabel44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseExited
+         jLabel44.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jLabel44MouseExited
+
+    // btn recommend , change color 
+    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
+         jLabel8.setForeground(Color.RED);
+    }//GEN-LAST:event_jLabel8MouseEntered
+
+    // btn recommend, change color 
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+       jLabel8.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jLabel8MouseExited
 
     /**
      * @param args the command line arguments
