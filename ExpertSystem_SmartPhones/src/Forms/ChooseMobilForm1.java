@@ -39,7 +39,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         jPanel3Android = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
@@ -53,6 +53,10 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         jPanel2Windows = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -77,13 +81,13 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(32, 39, 42));
-        jLabel1.setText("   Choose operating system ");
+        jLabel1.setText("  Choose operating system ");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/AndroidLogo.png"))); // NOI18N
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+                androidClicked(evt);
             }
         });
 
@@ -91,7 +95,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
+                iosClicked(evt);
             }
         });
 
@@ -107,7 +111,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
+                winClicked(evt);
             }
         });
 
@@ -118,7 +122,6 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(32, 39, 42));
         jLabel44.setText("           BACK");
-        jLabel44.setToolTipText("Retun to home ");
         jLabel44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel44.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -133,9 +136,9 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel27.setText("for you mobile phone");
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel34.setText("for you mobile phone");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -147,36 +150,36 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
                 .addGap(20, 20, 20))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
-                .addComponent(jLabel2)
-                .addGap(214, 214, 214)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(41, 41, 41))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(172, 172, 172)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(103, 103, 103)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(344, 344, 344)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 319, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(66, 66, 66))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22)
+                .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel27)
+                        .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -185,7 +188,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(107, 107, 107))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(162, 162, 162)
+                        .addGap(121, 121, 121)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -205,14 +208,13 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                HTCClicked(evt);
             }
         });
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(32, 39, 42));
         jLabel43.setText("           BACK");
-        jLabel43.setToolTipText("Return to choose OS");
         jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel43.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -235,7 +237,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel19MouseClicked(evt);
+                SamsungClicked(evt);
             }
         });
 
@@ -243,7 +245,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel20MouseClicked(evt);
+                ZTEClicked(evt);
             }
         });
 
@@ -251,7 +253,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel21MouseClicked(evt);
+                SonyEriccsonClicked(evt);
             }
         });
 
@@ -293,44 +295,85 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
             }
         });
 
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/phone.png"))); // NOI18N
+        jLabel27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LGClicked(evt);
+            }
+        });
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel31.setText("LG");
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/phone.png"))); // NOI18N
+        jLabel32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MotorolaClicked(evt);
+            }
+        });
+
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel33.setText("Motorola");
+
         javax.swing.GroupLayout jPanel3AndroidLayout = new javax.swing.GroupLayout(jPanel3Android);
         jPanel3Android.setLayout(jPanel3AndroidLayout);
         jPanel3AndroidLayout.setHorizontalGroup(
             jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3AndroidLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel8)
-                    .addGroup(jPanel3AndroidLayout.createSequentialGroup()
-                        .addComponent(jLabel26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)))
                 .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3AndroidLayout.createSequentialGroup()
-                        .addGap(150, 150, 150)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel8)
+                            .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                                .addComponent(jLabel26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30))))
+                    .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(jLabel31)))
+                .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                        .addGap(152, 152, 152)
+                        .addComponent(jLabel32)
+                        .addContainerGap(711, Short.MAX_VALUE))
+                    .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                        .addGap(149, 149, 149)
                         .addComponent(jLabel19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
-                        .addComponent(jLabel21)
-                        .addGap(207, 207, 207)
-                        .addComponent(jLabel20)
-                        .addGap(136, 136, 136))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3AndroidLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(185, 185, 185)
-                        .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(20, 20, 20))))
+                        .addComponent(jLabel21)
+                        .addGap(405, 405, 405))
+                    .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                        .addGap(143, 143, 143)
+                        .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(jPanel3AndroidLayout.createSequentialGroup()
-                .addGap(127, 127, 127)
+                .addGap(126, 126, 126)
                 .addComponent(jLabel22)
-                .addGap(157, 157, 157)
+                .addGap(161, 161, 161)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3AndroidLayout.createSequentialGroup()
+                        .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addGap(112, 112, 112)))
+                        .addGap(20, 20, 20))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3AndroidLayout.createSequentialGroup()
+                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(186, 186, 186)
+                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(132, 132, 132))))
             .addGroup(jPanel3AndroidLayout.createSequentialGroup()
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3AndroidLayout.setVerticalGroup(
@@ -341,25 +384,34 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
                 .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(118, 118, 118)
-                .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel19)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel20))
-                .addGap(18, 18, 18)
+                .addGap(67, 67, 67)
                 .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3AndroidLayout.createSequentialGroup()
                         .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel21))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel24)
                             .addComponent(jLabel23)
-                            .addComponent(jLabel24))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 213, Short.MAX_VALUE)
+                            .addComponent(jLabel22))
+                        .addGap(61, 61, 61)
+                        .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel32))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3AndroidLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabel33))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                         .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20))
                     .addGroup(jPanel3AndroidLayout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel25)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         jPanel3Android.setBounds(0, 0, 1100, 600);
@@ -371,19 +423,19 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
+                LGWinClicked(evt);
             }
         });
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(32, 39, 42));
-        jLabel10.setText("  Choose brand of mobile phone");
+        jLabel10.setText("  Choose brand of mobile phone ");
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/phone.png"))); // NOI18N
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+                NokiaWinClicked(evt);
             }
         });
 
@@ -391,7 +443,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel12MouseClicked(evt);
+                SamsungWinClicked(evt);
             }
         });
 
@@ -399,7 +451,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel13MouseClicked(evt);
+                ZTEWinClicked(evt);
             }
         });
 
@@ -422,7 +474,6 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(32, 39, 42));
         jLabel42.setText("           BACK");
-        jLabel42.setToolTipText("Return to choose OS");
         jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 39, 42)));
         jLabel42.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel42.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -498,7 +549,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
                 .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(jPanel2WindowsLayout.createSequentialGroup()
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 454, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2WindowsLayout.setVerticalGroup(
@@ -549,26 +600,28 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // btn android 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-
+    private void androidClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_androidClicked
+        JESS.JESS.setOS("Android");
         jPanel1.setVisible(false);
         jPanel2Windows.setVisible(false);
         jPanel3Android.setVisible(true);
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }//GEN-LAST:event_androidClicked
 
     // btn apple 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+    private void iosClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iosClicked
+        JESS.JESS.setOS("iOS");
          this.dispose();
          MobilForms lol = new MobilForms();
          lol.setVisible(true);
-    }//GEN-LAST:event_jLabel3MouseClicked
+    }//GEN-LAST:event_iosClicked
 
     // btn android
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+    private void winClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_winClicked
+        JESS.JESS.setOS("windows");
         jPanel1.setVisible(false);
         jPanel2Windows.setVisible(true);
         jPanel3Android.setVisible(false);
-    }//GEN-LAST:event_jLabel4MouseClicked
+    }//GEN-LAST:event_winClicked
 
     // btn back in choose OS 
     private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
@@ -579,9 +632,10 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel44MouseClicked
 
     // btn htc in jpanel3Adnroid
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    private void HTCClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HTCClicked
+         JESS.JESS.setManufacturer("HTC");
          OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel8MouseClicked
+    }//GEN-LAST:event_HTCClicked
 
     // btn back in jPanel3Android
     private void jLabel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MouseClicked
@@ -591,19 +645,22 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel43MouseClicked
 
     // btn samsung in jPanel3Android
-    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+    private void SamsungClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SamsungClicked
+         JESS.JESS.setManufacturer("Samsung");
          OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel19MouseClicked
+    }//GEN-LAST:event_SamsungClicked
 
     // btn zte in jPanel3 
-    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+    private void ZTEClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ZTEClicked
+         JESS.JESS.setManufacturer("ZTE");
        OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel20MouseClicked
+    }//GEN-LAST:event_ZTEClicked
 
     // btn sony ericsson in jPanel3Android
-    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
+    private void SonyEriccsonClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SonyEriccsonClicked
+         JESS.JESS.setManufacturer("Sony Ericcson");
      OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel21MouseClicked
+    }//GEN-LAST:event_SonyEriccsonClicked
 
     // return to choose OS in jPanel3Android
     private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
@@ -621,24 +678,28 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel26MouseClicked
 
     // btn lg in jPanel2Windows
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    private void LGWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LGWinClicked
+         JESS.JESS.setManufacturer("LG");
         OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel9MouseClicked
+    }//GEN-LAST:event_LGWinClicked
 
     // btn nokia in jPanel2Windows
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+    private void NokiaWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NokiaWinClicked
+         JESS.JESS.setManufacturer("Nokia");
         OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel11MouseClicked
+    }//GEN-LAST:event_NokiaWinClicked
 
     // btn samsung in jPanel2Windows
-    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+    private void SamsungWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SamsungWinClicked
+         JESS.JESS.setManufacturer("Samsung");
         OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel12MouseClicked
+    }//GEN-LAST:event_SamsungWinClicked
 
     // btn zte in jPanel2Windows
-    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+    private void ZTEWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ZTEWinClicked
+         JESS.JESS.setManufacturer("ZTE");
         OpenMobilChooseFeatures();
-    }//GEN-LAST:event_jLabel13MouseClicked
+    }//GEN-LAST:event_ZTEWinClicked
 
     // btn back in jPanel3Windows 
     private void jLabel42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseClicked
@@ -661,14 +722,24 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabel30MouseClicked
 
-    // btn back in choose os , change color 
+    private void LGClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LGClicked
+         JESS.JESS.setManufacturer("LG");
+        OpenMobilChooseFeatures();
+    }//GEN-LAST:event_LGClicked
+
+    private void MotorolaClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MotorolaClicked
+         JESS.JESS.setManufacturer("Motorola");
+        OpenMobilChooseFeatures();
+    }//GEN-LAST:event_MotorolaClicked
+
+    // btn back in jPanel1, change color 
     private void jLabel44MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseEntered
-       jLabel44.setForeground(Color.RED);
+        jLabel44.setForeground(Color.RED);
     }//GEN-LAST:event_jLabel44MouseEntered
 
-     // btn back in choose os , change color 
+    // btn back in jPanel1, change color
     private void jLabel44MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseExited
-         jLabel44.setForeground(Color.BLACK);
+        jLabel44.setForeground(Color.BLACK);
     }//GEN-LAST:event_jLabel44MouseExited
 
     // btn back in jPanel3, change color
@@ -676,17 +747,17 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jLabel43.setForeground(Color.RED);
     }//GEN-LAST:event_jLabel43MouseEntered
 
-     // btn back in jPanel3, change color
+    // btn back in jPanel3, change color
     private void jLabel43MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MouseExited
-         jLabel43.setForeground(Color.BLACK);
+        jLabel43.setForeground(Color.BLACK);
     }//GEN-LAST:event_jLabel43MouseExited
 
-     // btn back in jPanel2, change color
+   // btn back in jPanel2, change color
     private void jLabel42MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseEntered
-         jLabel42.setForeground(Color.RED);
+        jLabel42.setForeground(Color.RED);
     }//GEN-LAST:event_jLabel42MouseEntered
 
-     // btn back in jPanel2, change color
+    // btn back in jPanel2, change color
     private void jLabel42MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseExited
         jLabel42.setForeground(Color.BLACK);
     }//GEN-LAST:event_jLabel42MouseExited
@@ -758,6 +829,10 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
