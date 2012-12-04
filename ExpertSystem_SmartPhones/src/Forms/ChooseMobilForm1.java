@@ -623,7 +623,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
 
     // btn sony ericsson in jPanel3Android
     private void SonyEriccsonClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SonyEriccsonClicked
-         JESS.JESS.setManufacturer("Sony Ericcson");
+         JESS.JESS.setManufacturer("Sony_Ericcson");
      OpenMobilChooseFeatures();
     }//GEN-LAST:event_SonyEriccsonClicked
 
