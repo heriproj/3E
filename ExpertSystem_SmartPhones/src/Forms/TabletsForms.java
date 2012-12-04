@@ -220,6 +220,7 @@ public class TabletsForms extends javax.swing.JFrame {
         USBCheckBox.setBackground(new java.awt.Color(255, 255, 255));
         USBCheckBox.setText("Micro USB");
 
+        _3GCheckBox.setBackground(new java.awt.Color(255, 255, 255));
         _3GCheckBox.setText("3G");
         _3GCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -284,7 +285,7 @@ public class TabletsForms extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel13.setText("Price (EUR)");
+        jLabel13.setText("Price (€)");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -503,6 +504,8 @@ public class TabletsForms extends javax.swing.JFrame {
           this.dispose();
         ChooseTabletForm back1 = new ChooseTabletForm();
         back1.setVisible(true);
+        
+        //TODO: overenie vyplnenia fields 
     }//GEN-LAST:event_jLabel44MouseClicked
 
     // return to choose os 
