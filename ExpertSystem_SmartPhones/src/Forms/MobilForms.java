@@ -436,13 +436,13 @@ public class MobilForms extends javax.swing.JFrame {
             list.add("stereo_jack");
         }
         if(MicroSDCheckBox.isSelected()){
-            list.add("Micro SD");
+            list.add("micro_SD");
         }
         if(HDMICheckBox.isSelected()){
-            list.add("HDMI mini");
+            list.add("mini_HDMI");
         }
         if(MicroUSBCheckBox.isSelected()){
-            list.add("Micro USB");
+            list.add("micro_USB");
         }
         if(!list.isEmpty()){
             JESS.JESS.setIO(list);

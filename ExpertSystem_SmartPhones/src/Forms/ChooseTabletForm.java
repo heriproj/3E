@@ -762,7 +762,7 @@ public class ChooseTabletForm extends javax.swing.JFrame {
 
     // btn windows
     private void winClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_winClicked
-        JESS.JESS.setOS("Windows");
+        JESS.JESS.setOS("windows");
         jPanel1.setVisible(false);
         jPanel2Windows.setVisible(true);
         jPanel3Android.setVisible(false);

@@ -450,10 +450,10 @@ public class TabletsForms extends javax.swing.JFrame {
             list.add("Lightning");
         }
         if(HDMICheckBox.isSelected()){
-            list.add("HDMI mini");
+            list.add("mini_HDMI");
         }
         if(USBCheckBox.isSelected()){
-            list.add("Micro USB");
+            list.add("micro_USB");
         }
         if(!list.isEmpty()){
             JESS.JESS.setIO(list);
