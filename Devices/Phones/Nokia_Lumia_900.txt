@@ -1,0 +1,10 @@
+Name: Nokia Lumia 900
+------------------------------------------- 	
+OS: 			Windows
+Display resolution: 	4,3"
+Storage: 		16 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        jack, mirco usb, mirco SD
+Battery life 	        6 hours
+Price (cca):            440 € 

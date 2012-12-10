@@ -1,0 +1,11 @@
+Name: Sony Ericsson Xperia ARC S (LT18i)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4,2"
+Storage: 		1 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb
+Battery life 	        6 hours
+Price (cca):            300 €
+ 

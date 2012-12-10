@@ -1,0 +1,13 @@
+ 
+Name: Nokia Lumia 800
+------------------------------------------- 	
+OS: 			Windows
+Display resolution: 	3,7"
+Storage: 		16 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        jack, mirco usb, mirco SD
+Battery life 	        6 hours
+Price (cca):            350 € 
+ 
+

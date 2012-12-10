@@ -1,0 +1,13 @@
+Name: Samsung Galaxy S Duos (S7562)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4"
+Storage: 		4 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb micro SD
+Battery life 	        4 hours
+Price (cca):            270 € 
+ 
+
+
