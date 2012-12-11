@@ -1,0 +1,10 @@
+Name: iPhone 5
+------------------------------------------- 	
+OS: 			iOS	
+Display resolution: 	4"
+Storage: 		64 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack
+Battery life 	        8 hours
+Price (cca):            600 €

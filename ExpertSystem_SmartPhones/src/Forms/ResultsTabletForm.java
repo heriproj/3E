@@ -5,18 +5,97 @@
 package Forms;
 
 import java.awt.Color;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 /**
  *
  * @author Jozef
  */
 public class ResultsTabletForm extends javax.swing.JFrame {
-
-    /**
-     * Creates new form ResultsTabletForm
-     */
+ 
     public ResultsTabletForm() {
         initComponents();
+        switch (Results.device)
+        { 
+            case 1:
+                try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/Acer_Iconia_W510.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/Dell_XPS")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+            
+            case 2:
+                 try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/Dell_XPS_10.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/Acer_Iconia_W510.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+                
+                
+            case 3:
+                try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/HP_ENVY_x2.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/HP_ENVY_x2.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+            case 4:
+                try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/HUAWEI_MediaPad7.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/HUAWEI_MediaPad.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+            case 5:
+                 try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/Samsung_Ativ.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/Samsung_Ativ.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+            case 6:
+                 try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/GoClever_TAB.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/GoClever_TAB.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+                
+            case 7:
+                 try {
+                 lblTabletImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/tablet/iPad2.jpg")));
+                 txtTabletText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Tablet/iPad2.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+        
+        }
+            
+       
+        
+         
     }
 
     /**
@@ -33,9 +112,9 @@ public class ResultsTabletForm extends javax.swing.JFrame {
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblTabletImage = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtTabletText = new javax.swing.JTextArea();
         jLabel48 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -89,16 +168,16 @@ public class ResultsTabletForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        lblTabletImage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jTextArea1.setFocusable(false);
-        jTextArea1.setRequestFocusEnabled(false);
-        jTextArea1.setSelectionColor(new java.awt.Color(255, 255, 255));
-        jScrollPane1.setViewportView(jTextArea1);
+        txtTabletText.setEditable(false);
+        txtTabletText.setColumns(20);
+        txtTabletText.setRows(5);
+        txtTabletText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        txtTabletText.setFocusable(false);
+        txtTabletText.setRequestFocusEnabled(false);
+        txtTabletText.setSelectionColor(new java.awt.Color(255, 255, 255));
+        jScrollPane1.setViewportView(txtTabletText);
 
         jLabel48.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(102, 102, 102));
@@ -122,8 +201,8 @@ public class ResultsTabletForm extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblTabletImage, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 673, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -149,9 +228,9 @@ public class ResultsTabletForm extends javax.swing.JFrame {
                     .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 431, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                    .addComponent(lblTabletImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -163,9 +242,15 @@ public class ResultsTabletForm extends javax.swing.JFrame {
 
     // btn back to choose features window
     private void jLabel44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel44MouseClicked
-         this.dispose();
+        this.dispose();
         TabletsForms gg = new TabletsForms();
         gg.setVisible(true);
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_jLabel44MouseClicked
 
     // retun to home 
@@ -235,13 +320,13 @@ public class ResultsTabletForm extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel lblTabletImage;
+    private javax.swing.JTextArea txtTabletText;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,0 +1,10 @@
+Name: Samsung Ativ 
+------------------------------------------- 	
+OS: 			Windows	
+Display resolution: 	10,1"
+Storage: 		64 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, micro usb, mini hdmi
+Battery life 	        6 hours
+Price (cca):            1500 €

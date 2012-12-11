@@ -1,0 +1,10 @@
+Name: LG E900 Optimus 7
+------------------------------------------- 	
+OS: 			Windows
+Display resolution: 	3,8"
+Storage: 		16 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        jack, mirco usb
+Battery life 	        4 hours
+Price (cca):            190 €  

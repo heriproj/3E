@@ -1,0 +1,11 @@
+Name: Samsung Omnia 7 (I8700)
+------------------------------------------- 	
+OS: 			Windows
+Display resolution: 	4"
+Storage: 		8 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        jack, mirco usb
+Battery life 	        5 hours
+Price (cca):            190 €
+

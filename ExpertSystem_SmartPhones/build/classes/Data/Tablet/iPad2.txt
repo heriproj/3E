@@ -1,0 +1,11 @@
+Name: iPad2
+------------------------------------------- 	
+Manufacturer: 		Apple	
+OS: 			iOS	
+Display resolution: 	9,7
+Storage: 		64 GB	
+Camera (px):		5mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Light Jack
+Battery life 	        10 hours
+Price (cca):            500 €

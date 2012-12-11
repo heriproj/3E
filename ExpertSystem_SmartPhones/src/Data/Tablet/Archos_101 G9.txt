@@ -1,0 +1,10 @@
+Name: 3Q q-pad RC9717B
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	9,7"
+Storage: 		8 GB	
+Camera (px):		2 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, mini HDMI, micro SD
+Battery life 	        5 hours
+Price (cca):            170 €

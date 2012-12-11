@@ -613,6 +613,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
          this.dispose();
          MobilForms lol = new MobilForms();
          lol.setVisible(true);
+         Results.device = 4;
     }//GEN-LAST:event_iosClicked
 
     // btn android
@@ -635,6 +636,7 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     private void HTCClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HTCClicked
          JESS.JESS.setManufacturer("HTC");
          OpenMobilChooseFeatures();
+         Results.device = 5;
     }//GEN-LAST:event_HTCClicked
 
     // btn back in jPanel3Android
@@ -642,24 +644,28 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
         jPanel1.setVisible(true);
         jPanel2Windows.setVisible(false);
         jPanel3Android.setVisible(false);
+        
     }//GEN-LAST:event_jLabel43MouseClicked
 
     // btn samsung in jPanel3Android
     private void SamsungClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SamsungClicked
          JESS.JESS.setManufacturer("Samsung");
          OpenMobilChooseFeatures();
+         Results.device = 6;
     }//GEN-LAST:event_SamsungClicked
 
     // btn zte in jPanel3 
     private void ZTEClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ZTEClicked
          JESS.JESS.setManufacturer("ZTE");
        OpenMobilChooseFeatures();
+       Results.device = 8;
     }//GEN-LAST:event_ZTEClicked
 
     // btn sony ericsson in jPanel3Android
     private void SonyEriccsonClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SonyEriccsonClicked
          JESS.JESS.setManufacturer("Sony Ericcson");
      OpenMobilChooseFeatures();
+     Results.device = 7;
     }//GEN-LAST:event_SonyEriccsonClicked
 
     // return to choose OS in jPanel3Android
@@ -681,18 +687,21 @@ public class ChooseMobilForm1 extends javax.swing.JFrame {
     private void LGWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LGWinClicked
          JESS.JESS.setManufacturer("LG");
         OpenMobilChooseFeatures();
+        Results.device = 1;
     }//GEN-LAST:event_LGWinClicked
 
     // btn nokia in jPanel2Windows
     private void NokiaWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NokiaWinClicked
          JESS.JESS.setManufacturer("Nokia");
         OpenMobilChooseFeatures();
+        Results.device = 2;
     }//GEN-LAST:event_NokiaWinClicked
 
     // btn samsung in jPanel2Windows
     private void SamsungWinClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SamsungWinClicked
          JESS.JESS.setManufacturer("Samsung");
         OpenMobilChooseFeatures();
+        Results.device = 3;
     }//GEN-LAST:event_SamsungWinClicked
 
     // btn zte in jPanel2Windows

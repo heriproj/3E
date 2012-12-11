@@ -1,0 +1,11 @@
+Name: Samsung Galaxy S III (i9300)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4"
+Storage: 		16 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb, micro SD
+Battery life 	        5 hours
+Price (cca):            570 € 
+ 

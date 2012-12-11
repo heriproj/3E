@@ -1,0 +1,11 @@
+Name: HUAWEI MediaPad
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	7"
+Storage: 		8 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD
+Battery life 	        6 hours
+Price (cca):            350 € 
+  

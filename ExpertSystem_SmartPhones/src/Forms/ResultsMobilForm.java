@@ -5,6 +5,9 @@
 package Forms;
 
 import java.awt.Color;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 /**
  *
@@ -17,6 +20,101 @@ public class ResultsMobilForm extends javax.swing.JFrame {
      */
     public ResultsMobilForm() {
         initComponents();
+        
+        switch (Results.device)
+        { 
+            case 1:
+                try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/LG_E900_Optimus7.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/LG_E900_optimus7.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+            
+            case 2:
+                 try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/Nokia_Lumia_800.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/Nokia_Lumia_800.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+                
+                
+            case 3:
+                try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/Samsung_Omnia7.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/Samsung_Omnia7.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+            case 4:
+                try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/iPhone4.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/iPhone4.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+            case 5:
+                 try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/HTC_OneX+.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/HTC_OneX.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+            case 6:
+                 try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/Samsung_Galaxy_S2.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/Samsung_Galaxy_S2.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+                
+            case 7:
+                 try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/Sony_Ericsson_Xperia_ARC_S.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/Sony_Ericsson_Xperia_ARC_S.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+                
+                case 8:
+                 try {
+                 lblMobilImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Devices/mobil/ZTE_Atlas_W.jpg")));
+                 txtMobilText.read(new InputStreamReader( getClass().getResourceAsStream("/Data/Phone/ZTE_Atlas_W.txt")),null);
+            } 
+            catch (IOException e){
+                e.printStackTrace();
+            }
+                break;
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     /**
@@ -30,8 +128,8 @@ public class ResultsMobilForm extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
+        txtMobilText = new javax.swing.JTextArea();
+        lblMobilImage = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
@@ -44,16 +142,16 @@ public class ResultsMobilForm extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(250, 250, 250));
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jTextArea1.setFocusable(false);
-        jTextArea1.setSelectionColor(new java.awt.Color(255, 255, 255));
-        jScrollPane1.setViewportView(jTextArea1);
+        txtMobilText.setEditable(false);
+        txtMobilText.setColumns(20);
+        txtMobilText.setRows(5);
+        txtMobilText.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        txtMobilText.setFocusable(false);
+        txtMobilText.setSelectionColor(new java.awt.Color(255, 255, 255));
+        jScrollPane1.setViewportView(txtMobilText);
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        lblMobilImage.setBackground(new java.awt.Color(255, 255, 255));
+        lblMobilImage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(32, 39, 42));
@@ -117,7 +215,7 @@ public class ResultsMobilForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblMobilImage, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -147,7 +245,7 @@ public class ResultsMobilForm extends javax.swing.JFrame {
                     .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblMobilImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 416, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -239,7 +337,6 @@ public class ResultsMobilForm extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
@@ -247,6 +344,7 @@ public class ResultsMobilForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel lblMobilImage;
+    private javax.swing.JTextArea txtMobilText;
     // End of variables declaration//GEN-END:variables
 }
