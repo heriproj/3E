@@ -1,0 +1,11 @@
+
+Name: Sony Ericsson Xperia Play (R800)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4"
+Storage: 		512 MB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb, micro SD
+Battery life 	        5 hours
+Price (cca):            260 € 

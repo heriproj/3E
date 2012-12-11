@@ -1,0 +1,11 @@
+Name: Samsung Galaxy Y Duos
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	3,1"
+Storage: 		512 MB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro SD
+Battery life 	        4 hours
+Price (cca):            150 € 
+ 

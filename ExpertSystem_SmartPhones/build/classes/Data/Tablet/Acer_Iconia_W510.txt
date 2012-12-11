@@ -1,0 +1,10 @@
+Name: Acer Iconia W510 
+------------------------------------------- 	
+OS: 			Windows	
+Display resolution: 	10,1"
+Storage: 		64 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, micro usb, mini hdmi
+Battery life 	        6 hours
+Price (cca):            1600 €	

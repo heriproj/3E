@@ -1,0 +1,11 @@
+Name: Emgeton Consul
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	7"
+Storage: 		16 GB	
+Camera (px):		1,3 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, mini HDMI, micro SD
+Battery life 	        8,4 hours
+Price (cca):            470 € 
+

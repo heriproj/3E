@@ -1,0 +1,11 @@
+ Name: 3Q q-pad RC9711B 3G
+------------------------------------------- 		
+OS: 			Android	
+Display resolution: 	9,7"
+Storage: 		16 GB	
+Camera (px):		2 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,mini HDMI, micro SD
+Battery life 	        4 hours
+Price (cca):            230 €
+ 

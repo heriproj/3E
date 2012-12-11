@@ -1,0 +1,11 @@
+Name: ZTE Atlas W
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	3,5"
+Storage: 		512 MB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb
+Battery life 	        4 hours
+Price (cca):            150 €
+ 

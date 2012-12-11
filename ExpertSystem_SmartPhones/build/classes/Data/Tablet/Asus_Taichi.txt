@@ -1,0 +1,10 @@
+Name: Asus Taichi  
+------------------------------------------- 	
+OS: 			Windows	
+Display resolution: 	11,1"
+Storage: 		128 GB	
+Camera (px):		0 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, micro usb, mini hdmi
+Battery life 	        5 hours
+Price (cca):            760 €

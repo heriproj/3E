@@ -1,0 +1,10 @@
+Name: MOTOROLA Xoom 2
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	8,2"
+Storage: 		16 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, micro usb, mini hdmi
+Battery life 	        6 hours
+Price (cca):            320 €

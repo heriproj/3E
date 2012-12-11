@@ -1,0 +1,11 @@
+Name: HTC One X+ (Endeavor)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4,3"
+Storage: 		64 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb
+Battery life 	        6 hours
+Price (cca):            640 €
+ 

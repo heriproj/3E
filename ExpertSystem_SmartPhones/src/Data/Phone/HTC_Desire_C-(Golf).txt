@@ -1,0 +1,11 @@
+Name: HTC Desire C (Golf)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	3,5"
+Storage: 		5 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb
+Battery life 	        5 hours
+Price (cca):            190 €
+ 

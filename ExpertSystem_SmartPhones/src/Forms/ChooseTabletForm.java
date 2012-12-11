@@ -788,6 +788,7 @@ public class ChooseTabletForm extends javax.swing.JFrame {
     private void iosClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iosClicked
         JESS.JESS.setOS("iOS");
         OpenChooseFeatures();
+          Results.device = 7;
     }//GEN-LAST:event_iosClicked
 
     // btn windows
@@ -802,35 +803,42 @@ public class ChooseTabletForm extends javax.swing.JFrame {
     private void AsusClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AsusClicked
         JESS.JESS.setManufacturer("Asus");
         OpenChooseFeatures();
+         
     }//GEN-LAST:event_AsusClicked
 
     // btn del in jPanel2Windows
     private void DellClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DellClicked
         JESS.JESS.setManufacturer("Dell");
         OpenChooseFeatures();
+         Results.device = 2;
     }//GEN-LAST:event_DellClicked
 
     // btn acer in jPanel2Windows
     private void AcerClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AcerClicked
         JESS.JESS.setManufacturer("Acer");
         OpenChooseFeatures();
+         Results.device = 1;
     }//GEN-LAST:event_AcerClicked
 
     // btn hp in jPanel2Windows
     private void HPClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HPClicked
         JESS.JESS.setManufacturer("HP");
         OpenChooseFeatures();
+         Results.device =3;
+        
     }//GEN-LAST:event_HPClicked
 
     // btn samsung in jPanel2Windows
     private void SamsungClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SamsungClicked
         JESS.JESS.setManufacturer("Samsung");
         OpenChooseFeatures();
+       
     }//GEN-LAST:event_SamsungClicked
 
     private void LenovoClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LenovoClicked
         JESS.JESS.setManufacturer("Lenovo");
         OpenChooseFeatures();
+          
     }//GEN-LAST:event_LenovoClicked
 
     // return to home in jPanel2Windows
@@ -867,12 +875,14 @@ public class ChooseTabletForm extends javax.swing.JFrame {
     private void GoCleverClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GoCleverClicked
         JESS.JESS.setManufacturer("GoClever");
         OpenChooseFeatures();
+          Results.device =6;
     }//GEN-LAST:event_GoCleverClicked
 
     // btn huawei in jPanel3Android
     private void HuaweiClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HuaweiClicked
         JESS.JESS.setManufacturer("Huawei");
         OpenChooseFeatures();
+          Results.device =4;
     }//GEN-LAST:event_HuaweiClicked
 
     // btn toshiba  in jPanel3Android
@@ -919,6 +929,7 @@ public class ChooseTabletForm extends javax.swing.JFrame {
     private void SamsungAndroidClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SamsungAndroidClicked
         JESS.JESS.setManufacturer("Samsung");
         OpenChooseFeatures();
+          Results.device =5;
     }//GEN-LAST:event_SamsungAndroidClicked
 
     // btn back for jPanel1, change color 

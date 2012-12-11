@@ -1,0 +1,12 @@
+Name: HP ENVY x2
+------------------------------------------- 	
+OS: 			Windows	
+Display resolution: 	11,6"
+Storage: 		64 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, micro usb, mini hdmi
+Battery life 	        6 hours
+Price (cca):            1000 €
+
+ 

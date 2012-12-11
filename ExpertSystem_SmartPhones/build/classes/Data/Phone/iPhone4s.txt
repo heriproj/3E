@@ -1,0 +1,11 @@
+Name: iPhone 4s
+------------------------------------------- 	
+OS: 			iOS	
+Display resolution: 	3,5"
+Storage: 		64 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack
+Battery life 	        8 hours
+Price (cca):            420 €
+

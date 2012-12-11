@@ -1,0 +1,11 @@
+Name: iPad mini
+------------------------------------------- 	
+Manufacturer: 		Apple	
+OS: 			iOS	
+Display resolution: 	7,9
+Storage: 		32 GB	
+Camera (px):		5mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Light Jack
+Battery life 	        10 hours
+Price (cca):            400 €

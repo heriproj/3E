@@ -194,6 +194,7 @@ public class MainForm extends javax.swing.JFrame {
         JESS.setType("tablet");
         tab.setVisible(true);
         this.dispose();
+   
     }//GEN-LAST:event_jLabel5MouseClicked
 
     // button mobil
@@ -202,6 +203,7 @@ public class MainForm extends javax.swing.JFrame {
        JESS.setType("smartphone");
        mob.setVisible(true);
        this.dispose();
+  
     }//GEN-LAST:event_jLabel6MouseClicked
 
     /**

@@ -1,0 +1,11 @@
+Name: Samsung Galaxy S2 (i9100)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4,3"
+Storage: 		16 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb, micro SD
+Battery life 	        6 hours
+Price (cca):            380 €
+
