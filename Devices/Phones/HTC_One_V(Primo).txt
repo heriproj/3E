@@ -1,0 +1,11 @@
+Name: HTC One V (Primo)
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	3,7"
+Storage: 		4 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb
+Battery life 	        5 hours
+Price (cca):            260 €
+ 

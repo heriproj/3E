@@ -1,0 +1,11 @@
+Name: ZTE tania
+------------------------------------------- 	
+OS: 			Windows
+Display resolution: 	4,3"
+Storage: 		4 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        jack
+Battery life 	        4 hours
+Price (cca):            100 € 
+ 

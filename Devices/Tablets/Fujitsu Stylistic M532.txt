@@ -1,0 +1,10 @@
+Name: Fujitsu Stylistic M532
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	10,1"
+Storage: 		32 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro SD
+Battery life 	        5 hours
+Price (cca):            400 € 

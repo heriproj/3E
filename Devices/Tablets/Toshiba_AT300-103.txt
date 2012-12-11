@@ -1,0 +1,10 @@
+Name: Toshiba AT300-103
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	10,1"
+Storage: 		32 GB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, micro usb, mini hdmi
+Battery life 	        7 hours
+Price (cca):            500 €

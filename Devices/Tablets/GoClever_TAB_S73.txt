@@ -1,0 +1,10 @@
+Name: GoClever TAB S73
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	7"
+Storage: 		4 GB	
+Camera (px):		8 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack,micro SD, mini HDMI
+Battery life 	        4 hours
+Price (cca):            95 €  

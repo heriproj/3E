@@ -1,0 +1,11 @@
+Name: ZTE V9C-1
+------------------------------------------- 	
+OS: 			Android	
+Display resolution: 	4"
+Storage: 		512 MB	
+Camera (px):		5 mpx
+Conctivity:		Wifi, Bluetooth
+Input/ Output:	        Jack, micro usb
+Battery life 	        4 hours
+Price (cca):            140 €
+

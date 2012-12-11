@@ -2,6 +2,7 @@
 (assert (device (name "iPad mini, 32GB")(device_type tablet)(manufacturer Apple)(OS iOS)(display_resolution 7.9)(storage 16)(camera 5)(connectivity WiFi Bluetooth)(input_output Lightning stereo_jack)(battery 10)(price 429)))
 (assert (device (name "iPad mini, 64GB")(device_type tablet)(manufacturer Apple)(OS iOS)(display_resolution 7.9)(storage 16)(camera 5)(connectivity WiFi Bluetooth)(input_output Lightning stereo_jack)(battery 10)(price 529)))
 (assert (device (name "iPad 2, 16GB")(device_type tablet)(manufacturer Apple)(OS iOS)(display_resolution 9.7)(storage 16)(camera 5)(connectivity WiFi Bluetooth 3G)(input_output Lightning stereo_jack)(battery 10)(price 399)))
+<<<<<<< HEAD
 (assert (device (name "iPad 2, 64GB")(device_type tablet)(manufacturer Apple)(OS iOS)(display_resolution 9.7)(storage 64)(camera 5)(connectivity WiFi Bluetooth 3G)(input_output Lightning stereo_jack)(battery 10)(price 509)))
 (assert (device (name "iPhone 4, 32GB")(device_type smartphone)(manufacturer Apple)(OS iOS)(display_resolution 3.5)(storage 32)(camera 5)(connectivity WiFi Bluetooth 3G)(input_output Lightning stereo_jack)(battery 7)(price 400)))
 (assert (device (name "iPhone 4, 64GB")(device_type smartphone)(manufacturer Apple)(OS iOS)(display_resolution 3.5)(storage 64)(camera 5)(connectivity WiFi Bluetooth 3G)(input_output Lightning stereo_jack)(battery 7)(price 550)))
@@ -51,3 +52,7 @@
 (assert (device (name "Nokia Lumia 610")(device_type smartphone)(manufacturer Nokia)(OS windows)(display_resolution 3.7)(storage 8)(camera 5)(connectivity WiFi Bluetooth)(input_output stereo_jack micro_USB microslot)(battery 5)(price 180)))
 (assert (device (name "Nokia Lumia 710")(device_type smartphone)(manufacturer Nokia)(OS windows)(display_resolution 3.7)(storage 8)(camera 5)(connectivity WiFi Bluetooth)(input_output stereo_jack micro_USB microslot)(battery 6)(price 260)))
 (assert (device (name "Nokia Lumia 900")(device_type smartphone)(manufacturer Nokia)(OS windows)(display_resolution 3.7)(storage 16)(camera 8)(connectivity WiFi Bluetooth)(input_output stereo_jack micro_USB)(battery 6)(price 483)))
+=======
+(assert (device (name "Samsung Galaxy Tab")(device_type tablet)(manufacturer Samsung)(OS Android)(display_resolution 8.9)(storage 16)(camera 3)(connectivity WiFi Bluetooth 3G)(input_output stereo_jack)(battery 21)(price 331)))
+(assert (device (name "Nokia Lumia 900")(device_type smartphone)(manufacturer Nokia)(OS windows)(display_resolution 3.7)(storage 16)(camera 8)(connectivity WiFi Bluetooth)(input_output stereo_jack)(battery 300)(price 483)))
+>>>>>>> c46ba40cd5b6efa90ecd69dc01358d23a9a53f40
